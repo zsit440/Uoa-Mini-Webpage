@@ -1,7 +1,7 @@
 # Uoa-Mini-Webpage 
-A webpage made for compsci department.
+A Webpage made for compsci department.
 
-**Course：** Cotain a list of Computer Science Course description.  <br>
+**Course：** Contain a list of Computer Science Course description.  <br>
 **Notices：** Contain a list of notice. <br>
 **News：** The most current news from The University of Auckland. <br>
 **Guest Book：** View and write comments.<br>
