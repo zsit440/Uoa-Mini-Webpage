@@ -1,0 +1,121 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>zsit440 Assignment 2</title>
+   <script src="zsit440.js">
+   window.onload = function () {
+		showNoTabs();
+         clickHome();
+		 
+      }
+	  </script>
+	  
+	<link rel="stylesheet" href="zsit440.css">
+
+
+</head>
+<body>
+   <P>
+   <img src="http://redsox.uoa.auckland.ac.nz/ups/logo.svg" width = 150 height = 150>
+   <span id = "uniheader" ><h1><center>University of Compsci Department</center></h1></P></span>
+
+   
+		
+
+   <nav class= "topNav">
+      <table style="width: 100%;">
+         <tr>
+            <td id="Home" class="center" onclick="clickHome();">
+               Home
+            </td>
+            <td id="Courses" class="center" onclick="clickCourses();">
+               Courses
+            </td>
+            <td id="People" class="center" onclick="clickPeople();">
+               People
+            </td>
+			<td id="News" class="center" onclick="clickNews();">
+               News
+            </td>
+			<td id="Notices" class="center" onclick="clickNotices();">
+               Notices
+            </td>
+			<td id="GuestBook" class="center" onclick="clickGuestBook();">
+               Guest Book
+            </td>
+         </tr>
+      </table>
+      <hr />
+      <hr />
+   </nav>
+   
+  
+   
+   
+<div id="SectionA">
+     <section>
+		<image src ="https://www.radionz.co.nz/assets/news/88747/four_col_uni_of_auckland.jpg?1478597590" class = "home"/> 
+		<p id = 'intro' >Welcome to New Zealand's leading computer science department. We pride ourselves on the excellence of our staff and our students.</p>
+        
+     </section>
+</div>
+
+<div id="SectionB" style = "display:none">
+     <section>
+         <p>
+            <table id="displayCourses">
+			</table>
+			<button id="myBtn">timetable
+			</button>
+			<!--code from https://www.w3schools.com/howto/howto_css_modals.asp>
+			<!-- The Modal -->
+			<div id="timeslot" class="modal">
+
+			<!-- Modal content -->
+			<div class="modal-content">
+			<span class="close">&times;
+			</span>
+			<p id = "displayTimeTable">
+         </p>
+		 </div>
+		 </div>
+		 </p>
+     </section>
+ </div>
+   
+ <div id="SectionC">
+      <section>
+         <p>
+			<table id="displayPeople" width = '100%'></table>
+			
+         </p>
+      </section>
+   </div>
+ <div id="SectionD">
+      <section>
+         <p>
+			<div id = "displayNews"></div>
+         </p>
+      </section>
+  </div>
+  <div id="SectionE">
+      <section>
+         <p>
+			<div id = "displayNotices"></div>
+         </p>
+      </section>
+  </div>
+  <div id="SectionF"  style = "display:none">
+      <section>
+			<p class = 'guestBox'> If you have any comments or advices that you want to share with us,<br> you can feel free to leave your message in the box below </p>
+			<p>Enter your user name here: 
+			<input type = "text"  id = "getName" placeholder = "Name"> </p>
+			<input type = "text"  id = "getComment" placeholder = "comment">
+			<button onclick = "getGuestBook()">Send</button>
+			<p id = "displayGuestBook"></p>
+			
+		
+      </section>
+   </div>
+</body>
+</html>
